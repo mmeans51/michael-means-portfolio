@@ -1,4 +1,5 @@
 import "./MyworkList.css"
+import Mywork from "../Mywork/Mywork"
 
 const MyworkList = () => {
     return (
@@ -9,6 +10,13 @@ const MyworkList = () => {
                     describe my work here
                 </p>
             </div>
+            <div className="mw-list">
+                <Mywork/>
+                <Mywork/>
+                <Mywork/>
+                <Mywork/>
+            </div>
+            <a href="http"></a>
         </div>
     )
 }
