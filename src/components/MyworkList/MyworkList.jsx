@@ -1,5 +1,6 @@
 import "./MyworkList.css"
 import Mywork from "../Mywork/Mywork"
+import { Work } from "../../data"
 
 const MyworkList = () => {
     return (
@@ -11,14 +12,14 @@ const MyworkList = () => {
                 </p>
             </div>
             <div className="mw-list">
-                <Mywork/>
-                <Mywork/>
-                <Mywork/>
-                <Mywork/>
+                {Work.map((item) => (
+                    <Mywork key={item.id} img={item.img} link={item.link} />
+                ))}
+              
             </div>
-            <a href="http"></a>
+            
         </div>
-    )
-}
+    );
+};
 
 export default MyworkList
