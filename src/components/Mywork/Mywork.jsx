@@ -8,9 +8,11 @@ const Mywork = ({img, link}) => {
                 <div className="mw-circle"></div>
                 <div className="mw-circle"></div>
             </div>
+            
             <a href={link} target="_blank" rel="noreferrer">
-                <img src={img} alt=" " classname="w-img" />
+                <img src={img} alt=" " className="w-img" />
                 </a>
+                
         </div>
     );
 };
