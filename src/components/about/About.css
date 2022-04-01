@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     font-size: 50px;
+    background-color: #555;
 }
 
 .a-left{
@@ -41,8 +42,8 @@
 }
 
 .aboutme-img{
-    width: 120px;
-    height: 120px;
+    width: 400px;
+    height: 400px;
     border-radius: 20px;
 }
 

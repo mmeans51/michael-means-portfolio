@@ -1,6 +1,6 @@
 import "./About.css";
 import drums from "../../img/drumming.jpg";
-import skiing from "../../img/codingcert.jpg";
+import coding from "../../img/codingcert.jpg";
 
 const About = () => {
   return (
@@ -20,7 +20,7 @@ const About = () => {
               Description goes here
           </p>
           <div className="a-aboutme">
-              <img src={skiing} alt="" className="aboutme-img" />
+              <img src={coding} alt="" className="aboutme-img" />
               <div className="aboutme-text">
               <h4 className="codingtitle"> University of Texas Coding Certification</h4>
               <p className="codingcert"> description of coding certification here</p>
