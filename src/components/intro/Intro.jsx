@@ -1,4 +1,4 @@
-import "./Intro.css";
+import "./intro.css";
 import me from "../../img/hiking-removebg-preview.png"
 const Intro = () => {
   return (
