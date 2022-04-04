@@ -29,3 +29,18 @@
     
 }
 
+@media screen and (max-width: 480px) {
+    .mw {
+      padding: 10px;
+    }
+  
+    .mw-text {
+      width: 100%;
+    }
+  
+    .mw-description {
+      display: none;
+    }
+  
+
+}

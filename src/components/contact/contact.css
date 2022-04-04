@@ -82,21 +82,21 @@ form {
   }
   
   @media screen and (max-width: 480px) {
-    .c-wrapper {
+    .wrapper {
       flex-direction: column;
       padding: 0px 50px;
     }
   
-    .c-title {
+    .title {
       font-size: 30px;
     }
   
-    .c-info-item {
+    .item {
       margin: 20px 0px;
       width: 100%;
     }
   
-    .c-desc {
+    .description {
       display: none;
     }
   

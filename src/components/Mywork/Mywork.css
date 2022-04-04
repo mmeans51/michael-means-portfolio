@@ -35,3 +35,10 @@
 .work:hover .w-img{
     transform:  translateY(-100%);
 } 
+
+@media screen and (max-width: 480px) {
+    .work {
+      width: 40%;
+      height: 20vh;
+    }
+  }

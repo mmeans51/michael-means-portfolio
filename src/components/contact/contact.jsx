@@ -36,7 +36,7 @@ const Contactme = () => {
       <div className="bg"></div>
       <div className="wrapper">
         <div className="left">
-          <h1 className="title">Let's discuss your project</h1>
+          <h1 className="title">My Contacts</h1>
           <div className="info">
             <div className="item">
               <img src={phone} alt="" className="icon" />
@@ -54,7 +54,7 @@ const Contactme = () => {
         </div>
         <div className="right">
             <p className="description">
-               <b>contact</b> description goes here
+               <b>lets chat!</b> enter your info and a brief description of projects, job offers, or to schedule a phone or zoom call.
             </p>
             <form ref={formRef} onSubmit={handleSubmit}>
             <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Name" name="user_name" />
