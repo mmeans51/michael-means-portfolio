@@ -14,7 +14,7 @@ const About = () => {
       <div className="a-right">
           <h1 className="a-title">About Me</h1>
           <p className="a-sub">
-              I amd 28, he/him, from Grand Saline, Texas. I have an associates degree in Diesel Mechanics from TSTC and a coding bootcamp certification fro UT Austin.
+              I am 28, he/him, from Grand Saline, Texas. I have an associates degree in Diesel Mechanics from TSTC and a coding bootcamp certification fro UT Austin.
               I spend my free time playing drums in a few different bands and playing in bowling league with my friends.
               In 10 years i hope to be working remotely and traveling the world.
           </p>
