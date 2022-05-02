@@ -1,12 +1,12 @@
 import "./contact.css";
-import phone from "../../img/phone.png"
-import email from "../../img/email.png"
-import address from "../../img/address.png"
+import Phone from "../../img/phone.png";
+import Email from "../../img/email.png";
+import Address from "../../img/address.png";
 import { useContext, useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { ThemeContext } from "../../context";
 
-const Contactme = () => {
+const Contact = () => {
   const formRef = useRef();
   const [done, setDone] = useState(false)
   const theme = useContext(ThemeContext);
@@ -19,7 +19,7 @@ const Contactme = () => {
         "service_xpm51v6",
         "template_c6b4lpl",
         formRef.current,
-        "tFAJmHj4bU_mGSiHs"
+        "user_DrriDPTGKO2Zj4RDXCA6W"
       )
       .then(
         (result) => {
@@ -31,32 +31,34 @@ const Contactme = () => {
         }
       );
   };
+
   return (
-    <div className="contact">
-      <div className="bg"></div>
-      <div className="wrapper">
-        <div className="left">
-          <h1 className="title">My Contacts</h1>
-          <div className="info">
-            <div className="item">
-              <img src={phone} alt="" className="icon" />
-              +1 (903) 808 0914
+    <div className="c">
+      <div className="c-bg"></div>
+      <div className="c-wrapper">
+        <div className="c-left">
+          <h1 className="c-title">Let's discuss your project</h1>
+          <div className="c-info">
+            <div className="c-info-item">
+              <img src={Phone} alt="" className="c-icon" />
+              +1 903 808 0914
             </div>
-            <div className="item">
-              <img className="icon" src={email} alt="" />
+            <div className="c-info-item">
+              <img className="c-icon" src={Email} alt="" />
               colemeans51@gmail.com
             </div>
-            <div className="item">
-              <img className="icon" src={address} alt="" />
-              my address
+            <div className="c-info-item">
+              <img className="c-icon" src={Address} alt="" />
+              6061 Village Bend, Dallas, Tx 75206
             </div>
           </div>
         </div>
-        <div className="right">
-            <p className="description">
-               <b>lets chat!</b> enter your info and a brief description of projects, job offers, or to schedule a phone or zoom call.
-            </p>
-            <form ref={formRef} onSubmit={handleSubmit}>
+        <div className="c-right">
+          <p className="c-desc">
+            <b>What’s your story?</b> Get in touch. Always available for
+            freelancing if the right project comes along. me.
+          </p>
+          <form ref={formRef} onSubmit={handleSubmit}>
             <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Name" name="user_name" />
             <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Subject" name="user_subject" />
             <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Email" name="user_email" />
@@ -67,8 +69,7 @@ const Contactme = () => {
         </div>
       </div>
     </div>
-    
   );
 };
 
-export default Contactme;
+export default Contact;
