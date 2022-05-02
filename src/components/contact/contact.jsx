@@ -7,7 +7,7 @@ import emailjs from "emailjs-com";
 import { ThemeContext } from "../../context";
 
 const Contact = () => {
-  const formRef = useRef();
+  const form = useRef();
   const [done, setDone] = useState(false)
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
@@ -18,8 +18,8 @@ const Contact = () => {
       .sendForm(
         "service_xpm51v6",
         "template_c6b4lpl",
-        formRef.current,
-        "user_DrriDPTGKO2Zj4RDXCA6W"
+        form.current,
+        "tFAJmHj4bU_mGSiHs"
       )
       .then(
         (result) => {
