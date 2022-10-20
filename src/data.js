@@ -14,8 +14,12 @@ export const Work = [
         link: "https://felipezintzun.github.io/watchopedia/",
     },
     {
-        id: 2,
+        id: 3,
         img:  teksess ,
         link: "https://teksess.herokuapp.com/",
     },
+    {
+        id: 4,
+        img: TaskmasterPro
+    }
 ];
